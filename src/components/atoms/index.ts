@@ -1,3 +1,3 @@
-import { ThemeToggle } from "./btn";
+import { ThemeToggle, Advance, Previous } from "./btn";
 
-export { ThemeToggle };
+export { ThemeToggle, Advance, Previous };
