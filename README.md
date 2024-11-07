@@ -1,50 +1,50 @@
-# React + TypeScript + Vite
+# 📖 Web Book
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una **Web Book Portfolio** creada con **React, TypeScript, Vite, MUI, y Redux**. La idea principal es simular un libro digital con un diseño y una animación de pasar páginas, permitiendo a los usuarios navegar entre diferentes secciones de manera visual e interactiva.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologías utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ⚡ **Vite**: Para un desarrollo rápido y optimizado.
+- ⚛️ **React + TypeScript**: Estructura y tipado seguro.
+- 🎨 **Material UI (MUI)**: Para un diseño atractivo y consistente.
+- 🧩 **CoreUI y Bootstrap**: Para componentes estilizados y una base de diseño UI amplia y adaptable.
+- 💅 **Styled-Components**: Para estilos encapsulados y dinámicos en componentes donde sea conveniente, permitiendo un control detallado de estilos específicos.
+- 🗂️ **Redux Toolkit**: Gestión de estado global, especialmente útil para temas (modo oscuro/claro) y configuraciones globales.
+- 🛠️ **Alias de importación**: Configurado para rutas más limpias y organizadas, utilizando `@` como alias de la carpeta `src`.
+- 🧬 **Atomic Design**: Arquitectura de componentes basada en Atomic Design para organizar y reutilizar componentes.
 
-## Expanding the ESLint configuration
+## ✨ Funcionalidades Clave
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- 📖 **Animación de libro**: Navegación entre secciones con un efecto de pasar página.
+- 🌗 **Tema oscuro y claro**: Cambia el tema global de la aplicación.
+- 🔄 **Componentes reutilizables**: Diseñados para ser fácilmente extendibles y mantener una interfaz coherente.
 
-- Configure the top-level `parserOptions` property like this:
+## 📐 Diseño Responsivo
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Este proyecto está diseñado para adaptarse a diferentes tamaños de pantalla, proporcionando tres vistas específicas:
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+1. **Vista XL** 📚: Estilo de "libro" para pantallas grandes, ofreciendo la experiencia completa del portafolio.
+2. **Vista MD** 🗂️: Estilo de "cart" para pantallas medianas, adaptando el contenido a un formato más compacto.
+3. **Vista SM** 🃏: Estilo de "card" para pantallas pequeñas, optimizado para dispositivos móviles y ofreciendo una versión simplificada.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## 🏗️ Estructura de Atomic Design
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+El proyecto sigue la estructura de **Atomic Design** para la organización de los componentes. Esta arquitectura permite construir la interfaz de usuario de manera modular, en diferentes niveles de abstracción:
+
+1. **Atoms** ⚛️: Componentes básicos e independientes, como botones e íconos.
+2. **Molecules** 🧬: Combinaciones simples de átomos, como un campo de entrada con etiqueta.
+3. **Organisms** 🏗️: Componentes más complejos, formados por múltiples átomos y moléculas, como un formulario completo.
+4. **Templates** 📐: Estructuras que organizan organismos y definen el diseño sin contenido específico.
+5. **Pages** 📄: Vistas completas que integran plantillas y organismos en un contexto específico.
+
+### 📁 Ejemplo de Estructura
+
+```plaintext
+src/
+└── components/
+    ├── atoms/
+    ├── molecules/
+    ├── organisms/
+    ├── templates/
+    └── pages/
 ```
