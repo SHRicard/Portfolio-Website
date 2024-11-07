@@ -6,7 +6,7 @@ import { FaSun, FaMoon } from "react-icons/fa";
 import { toggleTheme } from "@slices";
 import type { RootState, AppDispatch } from "@store";
 
-const ThemeToggle: React.FC = () => {
+export const ThemeToggle: React.FC = () => {
   const dispatch = useDispatch<AppDispatch>();
   const mode = useSelector((state: RootState) => state.theme.mode);
 
@@ -31,5 +31,3 @@ const ThemeToggle: React.FC = () => {
     </IconButton>
   );
 };
-
-export default ThemeToggle;

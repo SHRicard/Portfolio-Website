@@ -10,6 +10,11 @@ export default defineConfig({
       "@store": path.resolve(__dirname, "./src/store/index"),
       "@slices": path.resolve(__dirname, "./src/store//slices/index"),
       "@atoms": path.resolve(__dirname, "./src/components/atoms/index"),
+      "@molecules": path.resolve(__dirname, "./src/components/molecules/index"),
+      "@organisms": path.resolve(__dirname, "./src/components/organisms/index"),
+      "@pages": path.resolve(__dirname, "./src/components/pages/index"),
+      "@templates": path.resolve(__dirname, "./src/components/templates/index"),
+      "@layout": path.resolve(__dirname, "./src/layout/index"),
     },
   },
 });

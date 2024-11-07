@@ -5,7 +5,12 @@
       "@theme": ["src/theme/index"],
       "@store": ["src/store/index"],
       "@slices": ["src/store//slices/index"],
-      "@atoms": ["src/components/atoms/index"]
+      "@atoms": ["src/components/atoms/index"],
+      "@molecules": ["src/components/molecules/index"],
+      "@organisms": ["src/components/organisms/index"],
+      "@pages": ["src/components/pages/index"],
+      "@templates": ["src/components/templates/index"],
+      "@layout": ["src/layout/index"]
     },
     "target": "ES2020",
     "useDefineForClassFields": true,
