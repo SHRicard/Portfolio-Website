@@ -10,6 +10,7 @@
       "@organisms": ["src/components/organisms/index"],
       "@pages": ["src/components/pages/index"],
       "@templates": ["src/components/templates/index"],
+      "@animated": ["src/components/animated/index"],
       "@layout": ["src/layout/index"]
     },
     "target": "ES2020",

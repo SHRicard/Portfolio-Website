@@ -1,5 +1,5 @@
-import React from "react";
 import styled from "styled-components";
+import { FoterPage } from "@molecules";
 
 // Contenedor estilizado para la tapa frontal
 const FrontBookContainer = styled.div`
@@ -16,7 +16,9 @@ const FrontBookContainer = styled.div`
 export const FrontBook = () => {
   return (
     <FrontBookContainer>
+      <h1>pageA</h1>
       <h1>FrontBook</h1>
+      <FoterPage type="Advance" />
     </FrontBookContainer>
   );
 };
